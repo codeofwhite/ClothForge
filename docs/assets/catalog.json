@@ -1,0 +1,844 @@
+{
+  "version": 1,
+  "review_status": "SELF_REVIEWED_PROVISIONAL",
+  "real_world_validated": false,
+  "cases": [
+    {
+      "id": "newton_vbd-hanging",
+      "engine": "newton_vbd",
+      "scenario": "hanging",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t095341z-d33879e0",
+      "outcome": "passed",
+      "failed_gates": [],
+      "metrics": {
+        "maximum_area_ratio": 1.0731275619591123,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.0731270324194149,
+        "maximum_self_intersection_pairs": 0,
+        "maximum_speed_m_s": 0.34296080470085144,
+        "minimum_area_ratio": 0.9989802759803873,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 77.72755847498775,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "iterations": 15,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "newton_vbd",
+        "substeps": 64,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "0fb65c795442395430d504b5ccc15978f03f7f0f99c833ca6e39d66b23aac0f2",
+      "source_config_file_sha256": "9e9397fe2c4cb427fb5e6519b1d9aeaab9262e46c133f98a4dcbd0e63045f302",
+      "native_versions": {
+        "newton": "1.4.0",
+        "numpy": "2.4.6",
+        "warp-lang": "1.16.0"
+      },
+      "material_mapping": null,
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    },
+    {
+      "id": "genesis_ipc-hanging",
+      "engine": "genesis_ipc",
+      "scenario": "hanging",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t095506z-cbc840c4",
+      "outcome": "passed",
+      "failed_gates": [],
+      "metrics": {
+        "maximum_area_ratio": 1.0731315165590507,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.0731315165590503,
+        "maximum_self_intersection_pairs": 0,
+        "maximum_speed_m_s": 0.9124410068183482,
+        "minimum_area_ratio": 0.9993104610660435,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 64.44098961725831,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "ipc_parameters": {
+          "contact_d_hat": 0.0005,
+          "contact_resistance": 10000000.0,
+          "newton_tolerance": 1e-05
+        },
+        "iterations": 128,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "genesis_ipc",
+        "substeps": 8,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "3a1409b440ef81119dc3ddae518ea1ac079943f482d875262a5c0cb960f14007",
+      "source_config_file_sha256": "a3a0328ecf23e9e7c28d6806d46c23db4e5858395055257a7594952b6601f5ce",
+      "native_versions": {
+        "genesis": "1.3.1",
+        "pyuipc": "0.0.25"
+      },
+      "material_mapping": {
+        "bending_stiffness": 0.005,
+        "calibration_status": "synthetic_unmeasured",
+        "density_kg_m3": 183.33333333333334,
+        "friction": 0.5,
+        "mapping": "nominal membrane scale and numeric bending preset; different energies, not calibrated equivalence",
+        "poisson": 0.3333333333333333,
+        "thickness_m": 0.0006,
+        "unmapped": [
+          "tri_kd",
+          "edge_kd"
+        ],
+        "young_pa": 13333333.333333334
+      },
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    },
+    {
+      "id": "newton_xpbd-hanging",
+      "engine": "newton_xpbd",
+      "scenario": "hanging",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t123032z-0110badb",
+      "outcome": "passed",
+      "failed_gates": [],
+      "metrics": {
+        "maximum_area_ratio": 1.0731275619591123,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.0731270324194149,
+        "maximum_self_intersection_pairs": 0,
+        "maximum_speed_m_s": 1.0111747980117798,
+        "minimum_area_ratio": 0.9975634519437089,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 232.94005585461855,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "iterations": 4,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "newton_xpbd",
+        "substeps": 512,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64,
+        "xpbd_surface_contact": {
+          "area_stiffness_from_material": true,
+          "gap_m": 0.001,
+          "iterations": 12,
+          "margin_m": 0.004,
+          "maximum_stretch": 1.1,
+          "revision": "surface-v9-conservative-contact",
+          "spring_damping_from_material": true,
+          "symmetric_projection": true,
+          "topological_exclusion_hops": 0
+        }
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "5194063428b943e20fc7e534aac686b309ba781e930e5ea3a34553ba5b8bb3bf",
+      "source_config_file_sha256": "d38dec086ee3773b2b2204562f6fa52cc7fa9599eefdf7f8fba6a12dbc77a610",
+      "native_versions": {
+        "newton": "1.4.0",
+        "numpy": "2.4.6",
+        "warp-lang": "1.16.0"
+      },
+      "material_mapping": "mesh-edge springs and bending constraints; opposite-vertex springs disabled to preserve free seams; area uses nominal tri_ka when area_stiffness_from_material is enabled; damping uses nominal tri_kd when spring_damping_from_material is enabled; not equivalent to triangular VBD elasticity",
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    },
+    {
+      "id": "physx_surface-hanging",
+      "engine": "physx_surface",
+      "scenario": "hanging",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t123821z-40b41342",
+      "outcome": "failed",
+      "failed_gates": [
+        "self_intersection"
+      ],
+      "metrics": {
+        "maximum_area_ratio": 1.0826253173156508,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.0962593025335392,
+        "maximum_self_intersection_pairs": 11,
+        "maximum_speed_m_s": 2.509954634736528,
+        "minimum_area_ratio": 0.9803828573617428,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 3.3132205940783024,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "iterations": 32,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "physx_parameters": {
+          "collision_iterations": 4,
+          "contact_offset_m": 0.002,
+          "contact_revision": "contact-v14-motion-audit",
+          "disable_sleep": true,
+          "explicit_zero_material_damping": true,
+          "motion_tolerance_m": 0.005,
+          "pair_updates": 4,
+          "rest_offset_m": 0.0003,
+          "self_collision_filter_distance_m": 0.0006
+        },
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "physx_surface",
+        "substeps": 8,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "48328790e7b787b26ad1d0b975f5cfc169537c0a67d699c4165308450d5cce2a",
+      "source_config_file_sha256": "622824ef7c1f79fcb55d8d9fcebb13d81e1291fc891c1220d10cfd6b35059860",
+      "native_versions": {
+        "isaac_sim": "6.0.1"
+      },
+      "material_mapping": {
+        "bend_pa": 23148148.148148153,
+        "density_kg_m3": 366.6666666666667,
+        "note": "nominal membrane Lame and bending scale mapping; uniform seam bending; damping unmapped; not real calibrated",
+        "poisson": 0.3333333333333333,
+        "thickness_m": 0.0006,
+        "young_pa": 13333333.333333334
+      },
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    },
+    {
+      "id": "ppf-hanging",
+      "engine": "ppf",
+      "scenario": "hanging",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t105147z-01c9c65f",
+      "outcome": "passed",
+      "failed_gates": [],
+      "metrics": {
+        "maximum_area_ratio": 1.0731275619591123,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.0731270324194149,
+        "maximum_self_intersection_pairs": 0,
+        "maximum_speed_m_s": 0.7252286076545715,
+        "minimum_area_ratio": 0.961959647785105,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 41.831392142921686,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "iterations": 2048,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "ppf_parameters": {
+          "contact_gap_m": 0.0005,
+          "ground_friction": 0.5,
+          "image_id": "sha256:2a1fdc6da8775c05d5f57e3441e59dde0b7a0f99dfe03676abaf024c80e2e8ae",
+          "strain_limit": 0.1
+        },
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "ppf",
+        "substeps": 8,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "96ae485b8a8e5125f8faf15d0d90868962d89dce59c3b9d736ce1c91031bf07a",
+      "source_config_file_sha256": "a30f0ee97ac250066b27d0e8fe60529eefd9ccd188eaf04806239277d27c092d",
+      "native_versions": {},
+      "material_mapping": "young-mod=tri_ke/areal_density; numeric bend; 10 percent strain barrier; uniform seam bending; not calibrated equivalence",
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    },
+    {
+      "id": "newton_vbd-drop",
+      "engine": "newton_vbd",
+      "scenario": "drop",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t091658z-86d4ce9e",
+      "outcome": "passed",
+      "failed_gates": [],
+      "metrics": {
+        "maximum_area_ratio": 1.0731275619591123,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.0731270324194149,
+        "maximum_self_intersection_pairs": 0,
+        "maximum_speed_m_s": 3.444674491882324,
+        "minimum_area_ratio": 0.9657201906227557,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 83.8461446724832,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "iterations": 15,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "newton_vbd",
+        "substeps": 64,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "37fb37f54b2c5634d9c9fa1938c41e52338ad8ed323c1c71f61bcd43d73b2682",
+      "source_config_file_sha256": "55a6183f648bc3dc13f41460db4a98eaed0d5d9fee167a93a28e8481746e46ac",
+      "native_versions": {
+        "newton": "1.4.0",
+        "numpy": "2.4.6",
+        "warp-lang": "1.16.0"
+      },
+      "material_mapping": null,
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    },
+    {
+      "id": "genesis_ipc-drop",
+      "engine": "genesis_ipc",
+      "scenario": "drop",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t091830z-b64fada2",
+      "outcome": "passed",
+      "failed_gates": [],
+      "metrics": {
+        "maximum_area_ratio": 1.0731315165590507,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.0731315165590503,
+        "maximum_self_intersection_pairs": 0,
+        "maximum_speed_m_s": 4.294902790177839,
+        "minimum_area_ratio": 0.9020230525211491,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 197.93986489251256,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "ipc_parameters": {
+          "contact_d_hat": 0.0005,
+          "contact_resistance": 10000000.0,
+          "newton_tolerance": 1e-05
+        },
+        "iterations": 128,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "genesis_ipc",
+        "substeps": 8,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "8a076f6bff9a01cab735e591a2ccdf93bee8e735a1146ad08d88e8a44d395d07",
+      "source_config_file_sha256": "5779fa62b6e5a01c2b180dfc78953f147706560095a77827e57ae07b2d2469ff",
+      "native_versions": {
+        "genesis": "1.3.1",
+        "pyuipc": "0.0.25"
+      },
+      "material_mapping": {
+        "bending_stiffness": 0.005,
+        "calibration_status": "synthetic_unmeasured",
+        "density_kg_m3": 183.33333333333334,
+        "friction": 0.5,
+        "mapping": "nominal membrane scale and numeric bending preset; different energies, not calibrated equivalence",
+        "poisson": 0.3333333333333333,
+        "thickness_m": 0.0006,
+        "unmapped": [
+          "tri_kd",
+          "edge_kd"
+        ],
+        "young_pa": 13333333.333333334
+      },
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    },
+    {
+      "id": "newton_xpbd-drop",
+      "engine": "newton_xpbd",
+      "scenario": "drop",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t123432z-3125df01",
+      "outcome": "passed",
+      "failed_gates": [],
+      "metrics": {
+        "maximum_area_ratio": 1.0898192670160083,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.118970349632271,
+        "maximum_self_intersection_pairs": 0,
+        "maximum_speed_m_s": 4.3718581199646,
+        "minimum_area_ratio": 0.9262963173337458,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 190.77450132742524,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "iterations": 4,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "newton_xpbd",
+        "substeps": 512,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64,
+        "xpbd_surface_contact": {
+          "area_stiffness_from_material": true,
+          "gap_m": 0.001,
+          "iterations": 12,
+          "margin_m": 0.004,
+          "maximum_stretch": 1.1,
+          "revision": "surface-v9-conservative-contact",
+          "spring_damping_from_material": true,
+          "symmetric_projection": true,
+          "topological_exclusion_hops": 0
+        }
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "991c0ec83d06a74deedf963199c974ecefae2c5c90abd4b4d7d59995a664c87e",
+      "source_config_file_sha256": "bc61be656d14211a389016e631290d10aeeaf707f8505016b916c96abdeb68d8",
+      "native_versions": {
+        "newton": "1.4.0",
+        "numpy": "2.4.6",
+        "warp-lang": "1.16.0"
+      },
+      "material_mapping": "mesh-edge springs and bending constraints; opposite-vertex springs disabled to preserve free seams; area uses nominal tri_ka when area_stiffness_from_material is enabled; damping uses nominal tri_kd when spring_damping_from_material is enabled; not equivalent to triangular VBD elasticity",
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    },
+    {
+      "id": "physx_surface-drop",
+      "engine": "physx_surface",
+      "scenario": "drop",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t124223z-05d942b5",
+      "outcome": "failed",
+      "failed_gates": [
+        "self_intersection",
+        "freefall_motion_mismatch"
+      ],
+      "metrics": {
+        "maximum_area_ratio": 1.0731275619591123,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.0915942263849896,
+        "maximum_self_intersection_pairs": 107,
+        "maximum_speed_m_s": 3.2077096934280744,
+        "minimum_area_ratio": 0.9724662687761408,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 3.249747149646282,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "iterations": 32,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "physx_parameters": {
+          "collision_iterations": 4,
+          "contact_offset_m": 0.002,
+          "contact_revision": "contact-v14-motion-audit",
+          "disable_sleep": true,
+          "explicit_zero_material_damping": true,
+          "motion_tolerance_m": 0.005,
+          "pair_updates": 4,
+          "rest_offset_m": 0.0003,
+          "self_collision_filter_distance_m": 0.0006
+        },
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "physx_surface",
+        "substeps": 8,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "ee50f18a40d8ec455b7c5f310e7aa5f185f52e3a7ef873bab6564c02175e19ec",
+      "source_config_file_sha256": "bf8db39643eeb30636043194136fa1f1c8d9a3adb18615381a7ba03c8600ef99",
+      "native_versions": {
+        "isaac_sim": "6.0.1"
+      },
+      "material_mapping": {
+        "bend_pa": 23148148.148148153,
+        "density_kg_m3": 366.6666666666667,
+        "note": "nominal membrane Lame and bending scale mapping; uniform seam bending; damping unmapped; not real calibrated",
+        "poisson": 0.3333333333333333,
+        "thickness_m": 0.0006,
+        "young_pa": 13333333.333333334
+      },
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    },
+    {
+      "id": "ppf-drop",
+      "engine": "ppf",
+      "scenario": "drop",
+      "garment": "tshirt-000",
+      "material": "medium",
+      "source_run_id": "run-20260918t105507z-10509955",
+      "outcome": "passed",
+      "failed_gates": [],
+      "metrics": {
+        "maximum_area_ratio": 1.0731275619591123,
+        "maximum_ground_penetration_m": 0.0,
+        "maximum_principal_stretch": 1.0731270324194149,
+        "maximum_self_intersection_pairs": 0,
+        "maximum_speed_m_s": 3.0597851276397705,
+        "minimum_area_ratio": 0.8541243793830137,
+        "saved_frames": 61,
+        "seam_gap_m": 0.0,
+        "seam_representation": "shared_vertex_topology",
+        "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+        "state_finite": true
+      },
+      "solver_seconds": 18.836917642503977,
+      "simulation": {
+        "collision_detection_interval": 1,
+        "duration_s": 2,
+        "edge_contact_buffer_size": 128,
+        "fps": 30,
+        "iterations": 2048,
+        "material_id": "medium",
+        "max_gpu_wall_seconds": 7200,
+        "max_output_bytes": 20000000000,
+        "particle_radius_m": 0.002,
+        "ppf_parameters": {
+          "contact_gap_m": 0.0005,
+          "ground_friction": 0.5,
+          "image_id": "sha256:2a1fdc6da8775c05d5f57e3441e59dde0b7a0f99dfe03676abaf024c80e2e8ae",
+          "strain_limit": 0.1
+        },
+        "scenarios": [
+          "hanging",
+          "drop"
+        ],
+        "self_contact_margin_m": 0.006,
+        "self_contact_radius_m": 0.002,
+        "soft_contact_kd": 10.0,
+        "soft_contact_ke": 10000.0,
+        "solver": "ppf",
+        "substeps": 8,
+        "topological_contact_filter_threshold": 1,
+        "variants": [
+          0,
+          1
+        ],
+        "vertex_contact_buffer_size": 64
+      },
+      "material_parameters": {
+        "calibration_status": "synthetic_unmeasured",
+        "edge_kd": 0.001,
+        "edge_ke": 0.005,
+        "friction": 0.5,
+        "id": "medium",
+        "mass_per_area": 0.22,
+        "mass_per_area_unit": "kg/m2",
+        "name": "中等合成布料",
+        "tri_ka": 3000,
+        "tri_kd": 0.2,
+        "tri_ke": 3000
+      },
+      "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+      "trajectory_sha256": "1e173356f6714d5e3b7fb6239435738fc0f0bad25d0baec1e6732b61c8b81ef2",
+      "source_config_file_sha256": "c13b2300049dd819d56213e064fb46cd4ba15b833320bfccfe492ddaa37668fb",
+      "native_versions": {},
+      "material_mapping": "young-mod=tri_ke/areal_density; numeric bend; 10 percent strain barrier; uniform seam bending; not calibrated equivalence",
+      "snapshot_note": "Configuration is the resolved source request with physical GPU allocation omitted. Source hashes describe historical artifacts; public source is a later snapshot."
+    }
+  ]
+}

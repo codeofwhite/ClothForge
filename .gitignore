@@ -1,0 +1,10 @@
+.venv*/
+third_party/
+data/
+outputs/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.release-checks/

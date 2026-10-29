@@ -1,0 +1,65 @@
+{
+  "config_sha256": "2b102cdbd2a572518ff56bfc267a6ab6198623d45647f16a1ed25698fb993238",
+  "contract": "clothforge_run_config_v1",
+  "garment": "tshirt-000",
+  "gates": {
+    "maximum_area_ratio": 1.6,
+    "maximum_ground_penetration_m": 0.002,
+    "maximum_principal_stretch": 1.15,
+    "maximum_self_intersection_pairs": 0,
+    "maximum_speed_m_s": 10,
+    "minimum_area_ratio": 0.6
+  },
+  "material": {
+    "calibration_status": "synthetic_unmeasured",
+    "edge_kd": 0.001,
+    "edge_ke": 0.005,
+    "friction": 0.5,
+    "id": "medium",
+    "mass_per_area": 0.22,
+    "mass_per_area_unit": "kg/m2",
+    "name": "中等合成布料",
+    "tri_ka": 3000,
+    "tri_kd": 0.2,
+    "tri_ke": 3000
+  },
+  "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+  "simulation": {
+    "collision_detection_interval": 1,
+    "duration_s": 2,
+    "edge_contact_buffer_size": 128,
+    "fps": 30,
+    "iterations": 32,
+    "material_id": "medium",
+    "max_gpu_wall_seconds": 7200,
+    "max_output_bytes": 20000000000,
+    "particle_radius_m": 0.002,
+    "physx_parameters": {
+      "collision_iterations": 4,
+      "contact_offset_m": 0.002,
+      "contact_revision": "contact-v14-motion-audit",
+      "disable_sleep": true,
+      "explicit_zero_material_damping": true,
+      "motion_tolerance_m": 0.005,
+      "pair_updates": 4,
+      "rest_offset_m": 0.0003,
+      "self_collision_filter_distance_m": 0.0006
+    },
+    "scenarios": [
+      "hanging",
+      "drop"
+    ],
+    "self_contact_margin_m": 0.006,
+    "self_contact_radius_m": 0.002,
+    "soft_contact_kd": 10.0,
+    "soft_contact_ke": 10000.0,
+    "solver": "physx_surface",
+    "substeps": 8,
+    "topological_contact_filter_threshold": 1,
+    "variants": [
+      0,
+      1
+    ],
+    "vertex_contact_buffer_size": 64
+  }
+}

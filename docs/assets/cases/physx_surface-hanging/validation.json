@@ -1,0 +1,36 @@
+{
+  "calibration_status": "synthetic_unmeasured",
+  "configuration_sha256": "95fe2207caf925581b5949111ae17eae45bca593574b27c41291ac11d07c03ab",
+  "contract": "clothforge_validation_v1",
+  "engine_id": "physx_surface",
+  "evaluator_version": "clothforge_sampled_surface_v2_motion",
+  "failed_gates": [
+    "self_intersection"
+  ],
+  "garment_id": "tshirt-000",
+  "material_id": "medium",
+  "metrics": {
+    "maximum_area_ratio": 1.0826253173156508,
+    "maximum_ground_penetration_m": 0.0,
+    "maximum_principal_stretch": 1.0962593025335392,
+    "maximum_self_intersection_pairs": 11,
+    "maximum_speed_m_s": 2.509954634736528,
+    "minimum_area_ratio": 0.9803828573617428,
+    "saved_frames": 61,
+    "seam_gap_m": 0.0,
+    "seam_representation": "shared_vertex_topology",
+    "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+    "state_finite": true
+  },
+  "motion_check": {
+    "maximum_com_error_m": null,
+    "scope": "not applicable to pinned cloth",
+    "tolerance_m": 0.005
+  },
+  "outcome": "failed",
+  "physical_wall_seconds": 3.3132205940783024,
+  "real_world_validated": false,
+  "scenario": "hanging",
+  "scope": "synthetic_garment_hanging_drop_2s_saved_frame_checks",
+  "trajectory_sha256": "48328790e7b787b26ad1d0b975f5cfc169537c0a67d699c4165308450d5cce2a"
+}

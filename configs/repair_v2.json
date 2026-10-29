@@ -1,0 +1,79 @@
+{
+  "contract": "clothforge_repair_v2",
+  "gpu_physical_index": 5,
+  "max_runs": 52,
+  "max_gpu_wall_seconds": 7200,
+  "max_output_bytes": 20000000000,
+  "material_id": "medium",
+  "diagnostic_garments": [
+    "tshirt-000",
+    "trousers-001"
+  ],
+  "confirm_variants": [
+    0,
+    1
+  ],
+  "holdout_variants": [
+    2,
+    3
+  ],
+  "scenarios": [
+    "hanging",
+    "drop"
+  ],
+  "profiles": [
+    {
+      "id": "a-baseline",
+      "overrides": {}
+    },
+    {
+      "id": "b-filter",
+      "overrides": {
+        "topological_contact_filter_threshold": 1
+      }
+    },
+    {
+      "id": "c-refresh",
+      "overrides": {
+        "topological_contact_filter_threshold": 1,
+        "collision_detection_interval": 1
+      }
+    },
+    {
+      "id": "d-substeps16",
+      "overrides": {
+        "topological_contact_filter_threshold": 1,
+        "collision_detection_interval": 1,
+        "substeps": 16
+      }
+    },
+    {
+      "id": "e-substeps32",
+      "overrides": {
+        "topological_contact_filter_threshold": 1,
+        "collision_detection_interval": 1,
+        "substeps": 32
+      }
+    },
+    {
+      "id": "f-iterations30",
+      "overrides": {
+        "topological_contact_filter_threshold": 1,
+        "collision_detection_interval": 1,
+        "substeps": 32,
+        "iterations": 30
+      }
+    },
+    {
+      "id": "g-contact",
+      "overrides": {
+        "topological_contact_filter_threshold": 1,
+        "collision_detection_interval": 1,
+        "substeps": 32,
+        "iterations": 30,
+        "soft_contact_ke": 100000,
+        "ground_contact_ke": 100000
+      }
+    }
+  ]
+}

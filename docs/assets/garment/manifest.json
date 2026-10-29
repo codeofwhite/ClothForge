@@ -1,0 +1,48 @@
+{
+  "category": "tshirt",
+  "contract": "clothforge_garment_v1",
+  "generator_config_sha256": "2b102cdbd2a572518ff56bfc267a6ab6198623d45647f16a1ed25698fb993238",
+  "generator_sources": {
+    "generate.py": "2719ed1a316ce0ab049fd6c99a8d656868fe31d93e20415c9400b95f990d5ce9",
+    "mesh.py": "37c3943a03d89282c118b14c6bcf08ca8ac15965eb072a6b3b605ff4d8fa9031",
+    "quality.py": "043613dcfeadb316bbeb2e493e33a3431e05dd2b1b7975279119ba5c7311d279",
+    "schema.py": "54f72b580e2cadddb0d40cf4c9df676e83fc2b6b94718abb6e0b87dde9137d63"
+  },
+  "geometry_metrics": {
+    "aabb_size_m": [
+      0.9245624479579164,
+      0.02380258394445318,
+      0.5810480202493717
+    ],
+    "area_m2": 0.7558623756062752,
+    "boundary_edges": 78,
+    "boundary_loops": 4,
+    "degenerate_triangles": 0,
+    "duplicate_faces": 0,
+    "initial_self_intersection_pairs": 0,
+    "maximum_area_ratio": 1.0731315165590423,
+    "maximum_principal_stretch": 1.0731315165590425,
+    "minimum_area_ratio": 1.00000000804643,
+    "minimum_principal_stretch": 0.9999999999999996,
+    "minimum_triangle_area_m2": 0.00011550165223067225,
+    "nonmanifold_edges": 0,
+    "triangles": 1366,
+    "vertices": 720
+  },
+  "id": "tshirt-000",
+  "mesh_sha256": "509f19acf21292e3d5726552dbcd2f202b411375e9a6e699fca553f3d527d6a9",
+  "parameters": {
+    "arm_width_m": 0.21981333198755776,
+    "length_m": 0.5810480202493717,
+    "neck_depth_m": 0.05758937351542766,
+    "neck_width_m": 0.19104762398434408,
+    "sleeve_m": 0.1800364263041496,
+    "width_m": 0.5244895953496171
+  },
+  "pattern_sha256": "f7b3ffe014cdae56121a48cfc9c9406abf3072e1d0b6d6dd9a5733b86394a038",
+  "physical_validation": "not_run",
+  "seed": 20260917,
+  "units": "m",
+  "upstream_revision": "d449629979028123a5c4dc9e732a2ec19b7fce31",
+  "variant": 0
+}

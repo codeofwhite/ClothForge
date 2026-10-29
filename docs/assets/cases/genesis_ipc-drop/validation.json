@@ -1,0 +1,43 @@
+{
+  "calibration_status": "synthetic_unmeasured",
+  "configuration_sha256": "75cf70985509f1085716e116c19221d183d153f2962816d3c536d7820c33725a",
+  "contract": "clothforge_validation_v1",
+  "engine_id": "genesis_ipc",
+  "evaluator_version": "clothforge_sampled_surface_v1",
+  "failed_gates": [],
+  "garment_id": "tshirt-000",
+  "material_id": "medium",
+  "material_mapping": {
+    "bending_stiffness": 0.005,
+    "calibration_status": "synthetic_unmeasured",
+    "density_kg_m3": 183.33333333333334,
+    "friction": 0.5,
+    "mapping": "nominal membrane scale and numeric bending preset; different energies, not calibrated equivalence",
+    "poisson": 0.3333333333333333,
+    "thickness_m": 0.0006,
+    "unmapped": [
+      "tri_kd",
+      "edge_kd"
+    ],
+    "young_pa": 13333333.333333334
+  },
+  "metrics": {
+    "maximum_area_ratio": 1.0731315165590507,
+    "maximum_ground_penetration_m": 0.0,
+    "maximum_principal_stretch": 1.0731315165590503,
+    "maximum_self_intersection_pairs": 0,
+    "maximum_speed_m_s": 4.294902790177839,
+    "minimum_area_ratio": 0.9020230525211491,
+    "saved_frames": 61,
+    "seam_gap_m": 0.0,
+    "seam_representation": "shared_vertex_topology",
+    "self_contact_check": "all_saved_frames_nonadjacent_triangle_intersections",
+    "state_finite": true
+  },
+  "outcome": "passed",
+  "physical_wall_seconds": 197.93986489251256,
+  "real_world_validated": false,
+  "scenario": "drop",
+  "scope": "synthetic_garment_hanging_drop_2s_saved_frame_checks",
+  "trajectory_sha256": "8a076f6bff9a01cab735e591a2ccdf93bee8e735a1146ad08d88e8a44d395d07"
+}

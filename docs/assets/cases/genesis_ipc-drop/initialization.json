@@ -1,0 +1,36 @@
+{
+  "dt": 0.004166666666666667,
+  "gravity_m_s2": [
+    0,
+    0,
+    -9.81
+  ],
+  "ground_z_m": 0,
+  "initial_pose_max_error": 0.0,
+  "mass_source": "native vertex volumes times density; IPC thickness is half-thickness",
+  "material_area_m2": 0.7533271019847667,
+  "material_mapping": {
+    "bending_stiffness": 0.005,
+    "calibration_status": "synthetic_unmeasured",
+    "density_kg_m3": 183.33333333333334,
+    "friction": 0.5,
+    "mapping": "nominal membrane scale and numeric bending preset; different energies, not calibrated equivalence",
+    "poisson": 0.3333333333333333,
+    "thickness_m": 0.0006,
+    "unmapped": [
+      "tri_kd",
+      "edge_kd"
+    ],
+    "young_pa": 13333333.333333334
+  },
+  "material_rest_reference": "per-face planar pattern metric",
+  "native_versions": {
+    "genesis": "1.3.1",
+    "pyuipc": "0.0.25"
+  },
+  "pins": [],
+  "seam_representation": "shared vertices, free seam hinges",
+  "solver": "StrainLimitingBaraffWitkinShell + DiscreteShellBending / IPC",
+  "substeps": 8,
+  "unconstrained_total_mass_kg": 0.16573196243664867
+}

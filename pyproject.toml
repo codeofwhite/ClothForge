@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clothforge"
+version = "0.1.0"
+description = "A reproducible cloth simulation playground across engines and solvers"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Hejun Zhang"}]
+dependencies = ["numpy>=1.26", "scipy>=1.11"]
+
+[project.optional-dependencies]
+preview = ["matplotlib>=3.8", "trimesh>=4"]
+
+[project.scripts]
+clothforge = "clothforge.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/codeofwhite/ClothForge"
+
+[tool.setuptools.packages.find]
+where = ["src"]

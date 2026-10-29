@@ -1,0 +1,47 @@
+{
+  "styles": [
+    {
+      "id": "straight",
+      "name": "直裙",
+      "defaults": {
+        "skirt_style": "straight",
+        "length_m": 0.55,
+        "waist_width_m": 0.38,
+        "hem_flare_m": 0.0
+      }
+    },
+    {
+      "id": "a_line",
+      "name": "A 字裙",
+      "defaults": {
+        "skirt_style": "a_line",
+        "length_m": 0.55,
+        "waist_width_m": 0.38,
+        "hem_flare_m": 0.14
+      }
+    }
+  ],
+  "fields": {
+    "length_m": {
+      "label": "裙长",
+      "min": 0.4,
+      "max": 0.85,
+      "step": 0.01
+    },
+    "waist_width_m": {
+      "label": "腰部平铺宽",
+      "min": 0.32,
+      "max": 0.48,
+      "step": 0.01
+    },
+    "hem_flare_m": {
+      "label": "单侧裙摆展开",
+      "min": 0.0,
+      "max": 0.22,
+      "step": 0.01
+    }
+  },
+  "mesh_edge_m": 0.035,
+  "initial_half_depth_m": 0.012,
+  "seed": 20261012
+}

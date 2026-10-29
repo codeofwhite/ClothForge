@@ -1,0 +1,51 @@
+{
+  "styles": [
+    {
+      "id": "crew",
+      "name": "圆领短袖",
+      "defaults": {
+        "neck_style": "crew",
+        "neck_width_m": 0.18,
+        "neck_depth_m": 0.06
+      }
+    },
+    {
+      "id": "vneck",
+      "name": "V 领短袖",
+      "defaults": {
+        "neck_style": "vneck",
+        "neck_width_m": 0.18,
+        "neck_depth_m": 0.1
+      }
+    }
+  ],
+  "fields": {
+    "length_m": {
+      "label": "衣长",
+      "min": 0.5,
+      "max": 0.85,
+      "step": 0.01
+    },
+    "width_m": {
+      "label": "衣身平铺宽",
+      "min": 0.4,
+      "max": 0.65,
+      "step": 0.01
+    },
+    "neck_width_m": {
+      "label": "领口宽",
+      "min": 0.14,
+      "max": 0.24,
+      "step": 0.01
+    },
+    "neck_depth_m": {
+      "label": "领口深",
+      "min": 0.03,
+      "max": 0.12,
+      "step": 0.01
+    }
+  },
+  "mesh_edge_m": 0.035,
+  "initial_half_depth_m": 0.012,
+  "seed": 20261012
+}

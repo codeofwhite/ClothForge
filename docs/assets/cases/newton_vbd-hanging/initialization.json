@@ -1,0 +1,59 @@
+{
+  "collision": "Newton VBD vertex-triangle and edge-edge self contact",
+  "fixture": "fixed mesh vertices at two shoulders/waist locations",
+  "free_seam_hinge_edges": 56,
+  "gravity_m_s2": [
+    0,
+    0,
+    -9.81
+  ],
+  "ground_material": {
+    "kd": 100.0,
+    "ke": 2500.0,
+    "mu": 1.0
+  },
+  "logical_gpu": "cuda:0",
+  "material_area_m2": 0.7533271019847667,
+  "material_rest_reference": "per-face planar pattern metric",
+  "native_versions": {
+    "newton": "1.4.0",
+    "numpy": "2.4.6",
+    "warp-lang": "1.16.0"
+  },
+  "pins": [
+    63,
+    80,
+    312,
+    341
+  ],
+  "profile_id": "studio-recommended",
+  "resolved_simulation": {
+    "collision_detection_interval": 1,
+    "duration_s": 2,
+    "edge_contact_buffer_size": 128,
+    "fps": 30,
+    "iterations": 15,
+    "material_id": "medium",
+    "max_gpu_wall_seconds": 7200,
+    "max_output_bytes": 20000000000,
+    "particle_radius_m": 0.002,
+    "scenarios": [
+      "hanging",
+      "drop"
+    ],
+    "self_contact_margin_m": 0.006,
+    "self_contact_radius_m": 0.002,
+    "soft_contact_kd": 10.0,
+    "soft_contact_ke": 10000.0,
+    "solver": "newton_vbd",
+    "substeps": 64,
+    "topological_contact_filter_threshold": 1,
+    "variants": [
+      0,
+      1
+    ],
+    "vertex_contact_buffer_size": 64
+  },
+  "seam_representation": "shared vertices, permanent ideal stitching",
+  "unconstrained_total_mass_kg": 0.16573196243664867
+}

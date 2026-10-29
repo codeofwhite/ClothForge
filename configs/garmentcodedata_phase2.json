@@ -1,0 +1,38 @@
+{
+  "source_root": "data/garmentcodedata/phase1",
+  "output_root": "outputs/garmentcodedata/phase2",
+  "mesh_resolution_cm": 1.0,
+  "pose_mapping_candidates": 32,
+  "material_config": "configs/pilot_v1.json",
+  "category_mapping": {
+    "pants": "trousers",
+    "skirt": "skirt",
+    "dress": "dress",
+    "jumpsuit": "jumpsuit"
+  },
+  "runnable_categories": [
+    "tshirt",
+    "long_sleeve",
+    "trousers",
+    "skirt"
+  ],
+  "samples": [
+    "rand_05H6WP8PJX",
+    "rand_05V1M7JE75",
+    "rand_07SXFM3OXA",
+    "rand_09WQLJ3QED",
+    "rand_033UAN6C0K",
+    "rand_0BC49T2K2O",
+    "rand_0CD8GFOYI4",
+    "rand_04IMMO8WDD",
+    "rand_07JYAR0G1P",
+    "rand_07LSZ9ASL3",
+    "rand_00YONAPXZE",
+    "rand_07EKIQJMNA"
+  ],
+  "registration_samples": [
+    "rand_07SXFM3OXA",
+    "rand_0BC49T2K2O",
+    "rand_07JYAR0G1P"
+  ]
+}

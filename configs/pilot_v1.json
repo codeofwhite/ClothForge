@@ -1,0 +1,90 @@
+{
+  "contract": "clothforge_pilot_v1",
+  "seed": 20260917,
+  "variants_per_category": 10,
+  "categories": [
+    "tshirt",
+    "trousers",
+    "open_coat"
+  ],
+  "mesh_edge_m": 0.035,
+  "initial_half_depth_m": 0.012,
+  "materials": [
+    {
+      "id": "light",
+      "name": "轻薄合成布料",
+      "mass_per_area": 0.12,
+      "mass_per_area_unit": "kg/m2",
+      "tri_ke": 1000,
+      "tri_ka": 1000,
+      "tri_kd": 0.1,
+      "edge_ke": 0.001,
+      "edge_kd": 0.001,
+      "friction": 0.3,
+      "calibration_status": "synthetic_unmeasured"
+    },
+    {
+      "id": "medium",
+      "name": "中等合成布料",
+      "mass_per_area": 0.22,
+      "mass_per_area_unit": "kg/m2",
+      "tri_ke": 3000,
+      "tri_ka": 3000,
+      "tri_kd": 0.2,
+      "edge_ke": 0.005,
+      "edge_kd": 0.001,
+      "friction": 0.5,
+      "calibration_status": "synthetic_unmeasured"
+    },
+    {
+      "id": "heavy",
+      "name": "厚实合成布料",
+      "mass_per_area": 0.35,
+      "mass_per_area_unit": "kg/m2",
+      "tri_ke": 8000,
+      "tri_ka": 8000,
+      "tri_kd": 0.3,
+      "edge_ke": 0.02,
+      "edge_kd": 0.002,
+      "friction": 0.7,
+      "calibration_status": "synthetic_unmeasured"
+    }
+  ],
+  "simulation": {
+    "solver": "newton_vbd",
+    "fps": 30,
+    "duration_s": 2,
+    "substeps": 64,
+    "iterations": 15,
+    "particle_radius_m": 0.002,
+    "self_contact_radius_m": 0.002,
+    "self_contact_margin_m": 0.006,
+    "variants": [
+      0,
+      1
+    ],
+    "material_id": "medium",
+    "scenarios": [
+      "hanging",
+      "drop"
+    ],
+    "gpu_physical_index": 0,
+    "max_gpu_wall_seconds": 7200,
+    "max_output_bytes": 20000000000,
+    "collision_detection_interval": 1,
+    "edge_contact_buffer_size": 128,
+    "soft_contact_kd": 10.0,
+    "soft_contact_ke": 10000.0,
+    "topological_contact_filter_threshold": 1,
+    "vertex_contact_buffer_size": 64
+  },
+  "gates": {
+    "maximum_principal_stretch": 1.15,
+    "minimum_area_ratio": 0.6,
+    "maximum_area_ratio": 1.6,
+    "maximum_ground_penetration_m": 0.002,
+    "maximum_speed_m_s": 10,
+    "maximum_self_intersection_pairs": 0
+  },
+  "scope": "synthetic single-layer garment geometry and sampled-frame cloth dynamics; no real-material or tailoring certification"
+}

@@ -1,0 +1,65 @@
+{
+  "gravity_m_s2": [
+    0,
+    0,
+    -9.81
+  ],
+  "ground_z_m": 0,
+  "image_id": "sha256:2a1fdc6da8775c05d5f57e3441e59dde0b7a0f99dfe03676abaf024c80e2e8ae",
+  "image_manifest": "sha256:3be1692bf1cf29f6a4e0435e746ca43382c69ce049c304bf501e9c943062320b",
+  "mass_source": "native assembled areas times per-face density corrected by rest/current area ratio; runtime mass buffer not exported",
+  "material_area_m2": 0.7533271019847667,
+  "material_mapping": "young-mod=tri_ke/areal_density; numeric bend; 10 percent strain barrier; uniform seam bending; not calibrated equivalence",
+  "material_rest_reference": "explicit per-face planar rest shape",
+  "native_parameters": {
+    "air_density": 0.0,
+    "contact_gap_m": 0.0005,
+    "dt": 0.004166666666666667,
+    "ground_friction": 0.5,
+    "max_newton_steps": 2048,
+    "strain_limit": 0.1
+  },
+  "physical_wall_seconds": 41.831392142921686,
+  "pins": [
+    63,
+    80,
+    312,
+    341
+  ],
+  "resolved_simulation": {
+    "collision_detection_interval": 1,
+    "duration_s": 2,
+    "edge_contact_buffer_size": 128,
+    "fps": 30,
+    "iterations": 2048,
+    "material_id": "medium",
+    "max_gpu_wall_seconds": 7200,
+    "max_output_bytes": 20000000000,
+    "particle_radius_m": 0.002,
+    "ppf_parameters": {
+      "contact_gap_m": 0.0005,
+      "ground_friction": 0.5,
+      "image_id": "sha256:2a1fdc6da8775c05d5f57e3441e59dde0b7a0f99dfe03676abaf024c80e2e8ae",
+      "strain_limit": 0.1
+    },
+    "scenarios": [
+      "hanging",
+      "drop"
+    ],
+    "self_contact_margin_m": 0.006,
+    "self_contact_radius_m": 0.002,
+    "soft_contact_kd": 10.0,
+    "soft_contact_ke": 10000.0,
+    "solver": "ppf",
+    "substeps": 8,
+    "topological_contact_filter_threshold": 1,
+    "variants": [
+      0,
+      1
+    ],
+    "vertex_contact_buffer_size": 64
+  },
+  "solver": "PPF contact solver",
+  "unconstrained_total_mass_kg": 0.16573196243664864,
+  "velocity_source": "saved-frame finite differences"
+}

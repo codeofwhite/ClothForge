@@ -1,0 +1,68 @@
+{
+  "fixture": "native OmniPhysicsVtxXformAttachment",
+  "gravity_m_s2": [
+    0,
+    0,
+    -9.81
+  ],
+  "ground_z_m": 0,
+  "mass_source": "explicit PhysicsMassAPI total mass equals reference area times areal density; volumetric material density corrected; runtime nodal masses not exposed",
+  "material_area_m2": 0.7533271019847667,
+  "material_mapping": {
+    "bend_pa": 23148148.148148153,
+    "density_kg_m3": 366.6666666666667,
+    "note": "nominal membrane Lame and bending scale mapping; uniform seam bending; damping unmapped; not real calibrated",
+    "poisson": 0.3333333333333333,
+    "thickness_m": 0.0006,
+    "young_pa": 13333333.333333334
+  },
+  "material_rest_reference": "planar pattern metric within 1e-6 m edge tolerance; separated native reference vertices",
+  "native_elapsed_simulation_s": 2.0000001043081284,
+  "native_versions": {
+    "isaac_sim": "6.0.1"
+  },
+  "physical_wall_seconds": 3.249747149646282,
+  "pins": [],
+  "reference_embedding_max_offset_m": 1.190129197222659e-06,
+  "resolved_simulation": {
+    "collision_detection_interval": 1,
+    "duration_s": 2,
+    "edge_contact_buffer_size": 128,
+    "fps": 30,
+    "iterations": 32,
+    "material_id": "medium",
+    "max_gpu_wall_seconds": 7200,
+    "max_output_bytes": 20000000000,
+    "particle_radius_m": 0.002,
+    "physx_parameters": {
+      "collision_iterations": 4,
+      "contact_offset_m": 0.002,
+      "contact_revision": "contact-v14-motion-audit",
+      "disable_sleep": true,
+      "explicit_zero_material_damping": true,
+      "motion_tolerance_m": 0.005,
+      "pair_updates": 4,
+      "rest_offset_m": 0.0003,
+      "self_collision_filter_distance_m": 0.0006
+    },
+    "scenarios": [
+      "hanging",
+      "drop"
+    ],
+    "self_contact_margin_m": 0.006,
+    "self_contact_radius_m": 0.002,
+    "soft_contact_kd": 10.0,
+    "soft_contact_ke": 10000.0,
+    "solver": "physx_surface",
+    "substeps": 8,
+    "topological_contact_filter_threshold": 1,
+    "variants": [
+      0,
+      1
+    ],
+    "vertex_contact_buffer_size": 64
+  },
+  "rest_metric_max_error_m": 4.095965042139049e-08,
+  "solver": "PhysX Surface Deformable",
+  "unconstrained_total_mass_kg": 0.16573196649551392
+}

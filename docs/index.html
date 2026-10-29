@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Explore real cloth simulation trajectories across five solver backends. Compare motion, inspect parameters, and download reproducible inputs.">
+<link rel="icon" href="data:,">
+<title>ClothForge — See how cloth behaves.</title>
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="#">Cloth<span>Forge</span><span class="version">PUBLIC PREVIEW / 0.1</span></a><a href="https://github.com/codeofwhite/ClothForge">Source on GitHub ↗</a></header>
+<main>
+<section class="intro"><div><p class="eyebrow">A CLOTH SIMULATION PLAYGROUND</p><h1>Same cloth.<br>Different dynamics.</h1><p class="lead">See what changes when you change the solver.<br>Scrub real trajectories, compare parameters, and take the inputs with you.</p></div><aside><span class="status">● PRECOMPUTED TRAJECTORIES</span><p>Five backends. One T-shirt.<br>Two seconds of recorded motion.</p><small>This preview replays existing simulations.<br>It does not run a solver in your browser.</small></aside></section>
+<section class="workbench" aria-labelledby="workbench-title">
+<div class="section-heading"><div><p class="eyebrow">01 / EXPLORE THE MOTION</p><h2 id="workbench-title">A shared view of different solvers.</h2></div><label class="scene-label">Scene <select id="scene"><option value="drop">Drop to ground</option><option value="hanging">Two-point hanging</option></select></label></div>
+<p class="hint">Drag either view to orbit both. Scroll to zoom. Cameras, scale, and playback time stay synchronized.</p>
+<div class="views">
+<article class="view" id="panel-a"><div class="view-head"><label for="solver-a">A <select id="solver-a"></select></label><span class="verdict" id="verdict-a">Loading</span></div><canvas id="canvas-a" aria-label="Solver A cloth trajectory"></canvas><div class="view-foot"><span id="summary-a">Loading trajectory…</span><a id="raw-a">Raw trajectory ↓</a></div></article>
+<article class="view" id="panel-b"><div class="view-head"><label for="solver-b">B <select id="solver-b"></select></label><span class="verdict" id="verdict-b">Loading</span></div><canvas id="canvas-b" aria-label="Solver B cloth trajectory"></canvas><div class="view-foot"><span id="summary-b">Loading trajectory…</span><a id="raw-b">Raw trajectory ↓</a></div></article>
+</div>
+<div class="transport"><button id="play" disabled>Play</button><label for="time" class="sr-only">Simulation time</label><input id="time" type="range" min="0" max="2" step="0.001" value="0" disabled><output id="clock">0.00 / 2.00 s</output><button class="secondary" id="reset">Reset view</button></div>
+<p role="status" id="load-status">Loading recorded cases…</p>
+</section>
+<section class="details" aria-labelledby="detail-title"><div class="section-heading"><div><p class="eyebrow">02 / INSPECT THE PARAMETERS</p><h2 id="detail-title">The settings behind the motion.</h2></div><span class="material-tag">MEDIUM · SYNTHETIC / UNMEASURED</span></div>
+<p class="hint">Identical nominal material values do not imply identical constitutive models. Numerical settings differ by backend; ¹ Historical wall times use backend-specific settings and exclude some startup costs; they are not an equal-compute speed benchmark.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Recorded parameter / metric</th><th scope="col" id="name-a">A</th><th scope="col" id="name-b">B</th></tr></thead><tbody id="parameters"></tbody></table></div>
+<div class="downloads"><a id="config-a">Download A configuration ↓</a><a id="config-b">Download B configuration ↓</a><a href="assets/garment/mesh.npz" download>Shared source mesh ↓</a><a href="assets/catalog.json" download>Case catalog & provenance ↓</a></div>
+<details><summary>Full parameter snapshots and failure gates</summary><div class="snapshots"><pre id="snapshot-a"></pre><pre id="snapshot-b"></pre></div></details>
+</section>
+<section class="notes"><div><p class="eyebrow">03 / KNOW WHAT YOU ARE SEEING</p><h2>Inspectable results.<br>Explicit limits.</h2></div><div class="note-body"><p>All ten clips use the same source garment, nominal medium material, and two-second horizon. A “passed” badge only means the historical sampled-frame checks passed. It does not establish real-cloth accuracy or solver superiority.</p><p>Failed PhysX cases stay visible, including self-intersection and motion-check failures. XPBD uses ClothForge contact extensions; the adapter is not a continuous collision detection guarantee.</p><p>The browser displays vertex positions rounded to 10⁻⁶ m. Original NPZ files, validation records, initialization records, and hashes are included. GPU runtimes were not re-run for this release.</p><a href="https://github.com/codeofwhite/ClothForge#run-locally">Run a backend locally ↗</a></div></section>
+</main><footer><span>ClothForge · Open source, MIT</span><span>Hejun Zhang · 2026</span><a href="https://github.com/codeofwhite/ClothForge">Code & reproducibility ↗</a></footer>
+</body></html>

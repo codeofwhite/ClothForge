@@ -1,0 +1,79 @@
+{
+  "collision": "native particle contacts plus per-step mass-weighted vertex-face/edge-edge surface projections and explicit strain limit; discrete, not certified CCD",
+  "fixture": "none",
+  "free_seam_hinge_edges": 56,
+  "gravity_m_s2": [
+    0,
+    0,
+    -9.81
+  ],
+  "ground_material": {
+    "kd": 100.0,
+    "ke": 2500.0,
+    "mu": 1.0
+  },
+  "logical_gpu": "cuda:0",
+  "material_area_m2": 0.7533271019847667,
+  "material_mapping": "mesh-edge springs and bending constraints; opposite-vertex springs disabled to preserve free seams; area uses nominal tri_ka when area_stiffness_from_material is enabled; damping uses nominal tri_kd when spring_damping_from_material is enabled; not equivalent to triangular VBD elasticity",
+  "material_rest_reference": "per-face planar pattern metric",
+  "native_versions": {
+    "newton": "1.4.0",
+    "numpy": "2.4.6",
+    "warp-lang": "1.16.0"
+  },
+  "pins": [],
+  "profile_id": "studio-recommended",
+  "resolved_simulation": {
+    "collision_detection_interval": 1,
+    "duration_s": 2,
+    "edge_contact_buffer_size": 128,
+    "fps": 30,
+    "iterations": 4,
+    "material_id": "medium",
+    "max_gpu_wall_seconds": 7200,
+    "max_output_bytes": 20000000000,
+    "particle_radius_m": 0.002,
+    "scenarios": [
+      "hanging",
+      "drop"
+    ],
+    "self_contact_margin_m": 0.006,
+    "self_contact_radius_m": 0.002,
+    "soft_contact_kd": 10.0,
+    "soft_contact_ke": 10000.0,
+    "solver": "newton_xpbd",
+    "substeps": 512,
+    "topological_contact_filter_threshold": 1,
+    "variants": [
+      0,
+      1
+    ],
+    "vertex_contact_buffer_size": 64,
+    "xpbd_surface_contact": {
+      "area_stiffness_from_material": true,
+      "gap_m": 0.001,
+      "iterations": 12,
+      "margin_m": 0.004,
+      "maximum_stretch": 1.1,
+      "revision": "surface-v9-conservative-contact",
+      "spring_damping_from_material": true,
+      "symmetric_projection": true,
+      "topological_exclusion_hops": 0
+    }
+  },
+  "seam_representation": "shared vertices, permanent ideal stitching",
+  "solver": "newton_xpbd",
+  "solver_extensions": {
+    "area_stiffness_from_material": true,
+    "gap_m": 0.001,
+    "iterations": 12,
+    "margin_m": 0.004,
+    "maximum_stretch": 1.1,
+    "revision": "surface-v9-conservative-contact",
+    "spring_damping_from_material": true,
+    "symmetric_projection": true,
+    "topological_exclusion_hops": 0
+  },
+  "unconstrained_total_mass_kg": 0.16573196243664867,
+  "unmapped_material_parameters": []
+}
